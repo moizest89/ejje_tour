@@ -1,0 +1,70 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>EJJE TOUR</title>
+
+<!--CSS-->
+<link href="css/tour.css" rel="stylesheet" type="text/css">
+
+<!--JS-->
+<script type="text/javascript" src="js/modernizr.js"></script>
+<script language="javascript">AC_FL_RunContent = 0;</script>
+<script src="AC_RunActiveContent.js" language="javascript"></script>
+<script>
+	if (/(iPhone|iPad|iPod)/i.test(navigator.userAgent)) {  
+       location.href="./mobile/index.html";	   
+    };
+</script>
+</head>
+<body style="text-align:center; margin-top:35px;">
+<script language="javascript">
+    
+    var height ='90%';
+	if (/(Firefox)/i.test(navigator.userAgent)) {  
+       height = '90%';	   
+    }else if(/(Chrom)/i.test(navigator.userAgent)) {  
+        height = '90%';	   
+    }else if(/(msie)/i.test(navigator.userAgent)) {
+       height = '90%';	   
+    }
+	
+	if (AC_FL_RunContent == 0) {
+		alert("must need AC_RunActiveContent.js");
+	} else {
+		AC_FL_RunContent(
+			'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0',
+			'width', '85%',
+			'height', height,
+			'src', 'book',
+			'quality', 'high',
+			'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+			'align', 'middle',
+			'play', 'true',
+			'loop', 'true',
+			'scale', 'showall',
+			'wmode', 'window',
+			'devicefont', 'false',
+			'id', 'book',
+			'bgcolor', '#ece9d8',
+			'name', 'book',
+			'menu', 'true',
+			'allowFullScreen', 'true',
+			'allowScriptAccess','sameDomain',
+			'movie', 'book',
+			'salign', ''
+			); //end AC code
+	}
+	
+</script>
+
+<noscript>
+	<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="100%" height="100%" id="book" align="middle">
+	<param name="allowScriptAccess" value="sameDomain" />
+	<param name="allowFullScreen" value="true" />
+	<param name="movie" value="book.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ece9d8" />	<embed src="book.swf" quality="high" bgcolor="#ece9d8" width="98%" height="99%" name="book" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+	</object>
+</noscript>
+
+
+</body>
+</html>
