@@ -277,6 +277,7 @@ div#contact_container{
 }
 div#contact_container h2.title{
 	text-align: left;
+	font-size: 48px;
 }
 div#contact_container table#show_contacts{
 	width: 100%;
@@ -290,4 +291,31 @@ div#contact_container table#show_contacts tr th{
 }
 div#contact_container table#show_contacts tr td{
 
+}
+table#show_contacts{
+	background-image: url(../img/white_shape.png);
+}
+table#show_contacts tr{
+	
+}
+table#show_contacts tr{
+	
+}
+table#show_contacts tr th{
+	background: #222;
+	color: #FFF;
+}table#show_contacts tr td{
+	color: #222;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px;
+	border-bottom: 1px solid #222;
+}
+table#show_contacts tr td.first{
+
+	border-left: 1px solid #222;
+}
+table#show_contacts tr td.last{
+
+	border-right: 1px solid #222;
 }

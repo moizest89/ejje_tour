@@ -36,6 +36,7 @@ var create_new_contact = {
 		var input_submit = $(ele)
 		create_new_contact.original_inputs_submit = $(ele);
 		input_submit.attr('disabled','disabled');
+		input_submit.val("Espere...");
 		create_new_contact.original_inputs = $('form#'+origin_form).find('input[type="text"]');
 		create_new_contact.length_inputs = create_new_contact.original_inputs.length
 		create_new_contact.verify_inputs(create_new_contact.original_inputs);
@@ -64,17 +65,17 @@ var create_new_contact = {
 				}
 			}
 		};
+
 		create_new_contact.submit_form();
 		//console.log(create_new_contact.other_count);
 	},
 	submit_form: function(){
 		if (create_new_contact.other_count == 4){
-			console.log('form_ok')
 			create_new_contact.send_information();
 		}else{
-			console.log("form not")
 			setTimeout(function() {
 				create_new_contact.original_inputs_submit.removeAttr('disabled')
+				create_new_contact.original_inputs_submit.val("Enviar");
 			}, 500);
 			
 		}
